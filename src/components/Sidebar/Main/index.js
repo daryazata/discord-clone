@@ -5,6 +5,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AddIcon from '@material-ui/icons/Add';
 import SidebarChannel from '../SidebarChannel';
 import SidebarVoice from '../SidebarVoice';
+import SidebarProfile from '../SidebarProfile';
 
 function Sidebar
 () {
@@ -22,9 +23,9 @@ function Sidebar
                     <ExpandMoreIcon/>
                     <h4>Text Channels</h4>
                     </div>
+                <AddIcon className="sidebar__addChannel"/>
                 </div>
 
-                <AddIcon className="sidebar__addChannel"/>
                 <div className="sidebar__channelsList">
                     <SidebarChannel channel='YouTube'/>
                     <SidebarChannel channel="React"/>
@@ -32,6 +33,7 @@ function Sidebar
                 </div>
             </div>
             <SidebarVoice/>
+            <SidebarProfile/>
         </div>
     )
 }

@@ -1,12 +1,15 @@
-.sidebar__voice {
+.sidebar__voice,
+.sidebar__profile {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: gray;
   border-top: 1px solid gray;
+  margin: 0 0.3rem;
 }
 
-.sidebar__voiceInfo {
+.sidebar__voiceInfo,
+.sidebar__profileInfo {
   flex: 1;
   padding: 10px;
 }
@@ -23,6 +26,13 @@
   font-size: smaller;
 }
 
-.sidebar__voiceIcons > .MuiSvgIcon-root {
+.sidebar__voiceIcons > .MuiSvgIcon-root,
+.sidebar__profileIcons > .MuiSvgIcon-root {
   padding: 10px;
+}
+
+/* sidebar profile only  */
+
+.sidebar__profileInfo > h3 {
+  color: white;
 }
