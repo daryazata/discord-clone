@@ -1,0 +1,28 @@
+.sidebar__voice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  border-top: 1px solid gray;
+}
+
+.sidebar__voiceInfo {
+  flex: 1;
+  padding: 10px;
+}
+
+.sidebar__voiceIcon {
+  color: #4fb185;
+}
+
+.sidebar__voiceInfo > h3 {
+  color: #4fb185;
+}
+
+.sidebar__voiceInfo > p {
+  font-size: smaller;
+}
+
+.sidebar__voiceIcons > .MuiSvgIcon-root {
+  padding: 10px;
+}
