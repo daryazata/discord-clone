@@ -36,3 +36,6 @@
 .sidebar__profileInfo > h3 {
   color: white;
 }
+.sidebar__profile__avatar{
+  cursor: pointer;
+}

@@ -1,18 +1,25 @@
 import { Avatar } from '@material-ui/core'
 import { Mic, Headset, Settings } from '@material-ui/icons'
 import React from 'react'
+import { selectUser } from '../../features/userSlice'
+import {useSelector} from 'react-redux'
 
 import './SidebarVoice.css'
+import { auth } from '../../app/firebase'
+
 
 
 
 function SidebarProfile() {
+
+    const user = useSelector(selectUser)
+
     return (
         <div className="sidebar__profile">
-            <Avatar src="https://www.newdvdreleasedates.com/images/profiles/julia-roberts-04.jpg"/>
+            <Avatar className="sidebar__profile__avatar" onClick={ ()=>auth.signOut() } src={user.photo}/>
             <div className="sidebar__profileInfo">
-                <h3>@lalapis</h3>
-                <p>#thisismyID</p>
+                <h3>{user.displayName}</h3>
+                <p>#{user.uid.substring(0,5)} </p>
 
             </div>
             <div className="sidebar__profileIcons">

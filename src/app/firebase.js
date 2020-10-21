@@ -1,6 +1,6 @@
 import firebase from 'firebase'
 
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyC9QDU-MvyUBecmmbn6qK4VsJRJ0WaVbi0",
     authDomain: "discord-clone-e2dfe.firebaseapp.com",
     databaseURL: "https://discord-clone-e2dfe.firebaseio.com",

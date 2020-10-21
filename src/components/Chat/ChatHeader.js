@@ -2,7 +2,7 @@ import { EditLocation, HelpRounded, Notifications, PeopleAltRounded, SearchRound
 import React from 'react'
 import './ChatHeader.css'
 
-function ChatHeader() {
+function ChatHeader({channelName}) {
     return (
         <div className="chatHeader">
 
@@ -11,7 +11,7 @@ function ChatHeader() {
                     <span className="chatHeader__hash">
                         #
                     </span>
-                    Test Channel </h3>
+                    {channelName} </h3>
             </div>
             <div className="chatHeader__right">
                 <Notifications/>

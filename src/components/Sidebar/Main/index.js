@@ -1,14 +1,46 @@
 //rfce
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
 import './style.css'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AddIcon from '@material-ui/icons/Add';
 import SidebarChannel from '../SidebarChannel';
 import SidebarVoice from '../SidebarVoice';
 import SidebarProfile from '../SidebarProfile';
+import db from '../../../app/firebase';
 
 function Sidebar
 () {
+
+
+    const [channels, setChannels] = useState([])
+
+    useEffect(()=>{
+        db.collection('channels').onSnapshot(snapshot=>
+            setChannels(
+                snapshot.docs.map((doc) =>({
+                    id:doc.id,
+                    channel: doc.data()
+                }))
+            ))
+    },[])
+
+    const handleAddChannel = () =>{
+        const channelName = prompt("Enter a new channel name")
+
+        if(channelName){
+            db.collection('channels').add({
+                channelName
+            })
+        }
+    }
+
+    const display_channels= channels.map((channel, id)=>{
+
+
+        return  <SidebarChannel key={id} channel={channel.channel.channelName}/>
+    })
+    console.log(display_channels)
     return (
         <div className="sidebar">
 
@@ -23,13 +55,12 @@ function Sidebar
                     <ExpandMoreIcon/>
                     <h4>Text Channels</h4>
                     </div>
-                <AddIcon className="sidebar__addChannel"/>
+                <AddIcon onClick={handleAddChannel} className="sidebar__addChannel"/>
                 </div>
 
                 <div className="sidebar__channelsList">
-                    <SidebarChannel channel='YouTube'/>
-                    <SidebarChannel channel="React"/>
-                    <SidebarChannel channel="Node"/>
+
+                    {display_channels}
                 </div>
             </div>
             <SidebarVoice/>
