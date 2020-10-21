@@ -1,18 +1,27 @@
 import React from 'react';
-
-import './App.css';
 import Chat from './components/Chat/Main';
 import Sidebar from './components/Sidebar/Main';
+import Login from './components/Login/Login';
+import './App.css';
+import {useSelector} from 'react-redux'
+import {selectUser} from "./features/userSlice"
 
 
 function App() {
-  // BEM naming small let classnames
+
+  const user = useSelector(selectUser)
+
   return (
     <div className="app">
- 
-      <Sidebar/>
-      {/* Chat */}
-      <Chat/>
+      {
+        user? (
+          <>
+          <Sidebar/>
+          <Chat/>
+          
+          </>
+        ):(<Login/>)
+      }
     </div>
   );
 }
