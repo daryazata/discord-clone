@@ -18,12 +18,16 @@ function ChatHeader() {
                 <EditLocation/>
                 <PeopleAltRounded/>
             </div>
+            <div className="chatHeader__right_right">
+
             <div className="chatHeader__search">
                 <input type="text" placeholder="Search"/>
                 <SearchRounded/>
             </div>
-            <SendRounded/>
-            <HelpRounded/>
+                <SendRounded/>
+                <HelpRounded/>
+    
+            </div>
         </div>
     )
 }

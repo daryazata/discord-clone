@@ -1,0 +1,35 @@
+.chat__inputIcons {
+}
+.chat__input {
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #474b53;
+  margin: 1.2rem;
+  border-radius: 0.4rem;
+  border-top: 0.1rem solid gray;
+}
+
+.chat__input > form > input {
+  padding: 1rem;
+  background: transparent;
+  border: none;
+  outline-width: 0;
+  color: white;
+  font-size: large;
+  width: 100%;
+}
+
+.chat__input > form {
+  flex: 1;
+}
+
+.chat__inputButton {
+  display: none;
+}
+
+.chat__inputIcons > .MuiSvgIcon-root {
+  padding: 0.3rem;
+}

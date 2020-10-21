@@ -4,4 +4,6 @@
   border-left: 0.1rem solid gray;
   /* border-left: 3px solid #26282c; */
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
