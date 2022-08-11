@@ -1,8 +1,8 @@
+import React from 'react';
+import { useSelector } from 'react-redux';
 import { Avatar } from '@material-ui/core';
 import { Mic, Headset, Settings } from '@material-ui/icons';
-import React from 'react';
 import { selectUser } from '../../app/features/userSlice';
-import { useSelector } from 'react-redux';
 
 import './SidebarVoice.css';
 import { auth } from '../../app/firebase';

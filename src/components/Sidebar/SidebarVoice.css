@@ -6,6 +6,7 @@
   color: gray;
   border-top: 1px solid gray;
   margin: 0 0.3rem;
+  padding: 1.1rem;
 }
 
 .sidebar__voiceInfo,
@@ -36,6 +37,6 @@
 .sidebar__profileInfo > h3 {
   color: white;
 }
-.sidebar__profile__avatar{
+.sidebar__profile__avatar {
   cursor: pointer;
 }
