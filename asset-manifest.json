@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/discord-clone/static/css/main.db750740.chunk.css",
-    "main.js": "/discord-clone/static/js/main.e4010637.chunk.js",
-    "main.js.map": "/discord-clone/static/js/main.e4010637.chunk.js.map",
+    "main.css": "/discord-clone/static/css/main.dbe431ee.chunk.css",
+    "main.js": "/discord-clone/static/js/main.ad0546d4.chunk.js",
+    "main.js.map": "/discord-clone/static/js/main.ad0546d4.chunk.js.map",
     "runtime-main.js": "/discord-clone/static/js/runtime-main.f533448a.js",
     "runtime-main.js.map": "/discord-clone/static/js/runtime-main.f533448a.js.map",
-    "static/js/2.b87b8197.chunk.js": "/discord-clone/static/js/2.b87b8197.chunk.js",
-    "static/js/2.b87b8197.chunk.js.map": "/discord-clone/static/js/2.b87b8197.chunk.js.map",
+    "static/js/2.c034c72b.chunk.js": "/discord-clone/static/js/2.c034c72b.chunk.js",
+    "static/js/2.c034c72b.chunk.js.map": "/discord-clone/static/js/2.c034c72b.chunk.js.map",
     "index.html": "/discord-clone/index.html",
-    "precache-manifest.dca6162e06b7e57ccbfa535910ca7922.js": "/discord-clone/precache-manifest.dca6162e06b7e57ccbfa535910ca7922.js",
+    "precache-manifest.4d0187396365c7749555803c344a9c86.js": "/discord-clone/precache-manifest.4d0187396365c7749555803c344a9c86.js",
     "service-worker.js": "/discord-clone/service-worker.js",
-    "static/css/main.db750740.chunk.css.map": "/discord-clone/static/css/main.db750740.chunk.css.map",
-    "static/js/2.b87b8197.chunk.js.LICENSE.txt": "/discord-clone/static/js/2.b87b8197.chunk.js.LICENSE.txt"
+    "static/css/main.dbe431ee.chunk.css.map": "/discord-clone/static/css/main.dbe431ee.chunk.css.map",
+    "static/js/2.c034c72b.chunk.js.LICENSE.txt": "/discord-clone/static/js/2.c034c72b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f533448a.js",
-    "static/js/2.b87b8197.chunk.js",
-    "static/css/main.db750740.chunk.css",
-    "static/js/main.e4010637.chunk.js"
+    "static/js/2.c034c72b.chunk.js",
+    "static/css/main.dbe431ee.chunk.css",
+    "static/js/main.ad0546d4.chunk.js"
   ]
 }
