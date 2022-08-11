@@ -1,7 +1,6 @@
 import { Avatar } from '@material-ui/core';
 import React from 'react';
 import './Message.css';
-import { format } from 'date-fns';
 
 function Message({ message }) {
   return (
